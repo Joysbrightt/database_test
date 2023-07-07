@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'bincom_database_test.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # or 'django.db.backends.sqlite3'
-        'NAME': 'bincom_test',
+        'NAME': 'bincom_database_test',
         'USER': 'root',
         'PASSWORD': 'Abosede@1',
         'HOST': 'localhost',
