@@ -5,40 +5,53 @@
     <title>new_polling_unit</title>
 </head>
 <body>
-<!-- create_polling_unit.html -->
-
-<form method="post" action="{% url 'store_polling_unit_results' %}">
-  {% csrf_token %}
-
-  <label for="uniqueid">Unique ID:</label>
+<form>
+  <div class="form-field">
+  <label>Unique ID:</label>
   <input type="number" name="uniqueid" required>
+</div>
 
-  <label for="ward_id">Ward ID:</label>
+<div class="form-field">
+  <label>Ward ID:</label>
   <input type="number" name="ward_id" required>
+</div>
 
-  <label for="lga_id">LGA ID:</label>
+<div class="form-field">
+  <label>LGA ID:</label>
   <input type="number" name="lga_id" required>
+</div>
 
-  <label for="state_id">State ID:</label>
+<div class="form-field">
+  <label>State ID:</label>
   <input type="number" name="state_id" required>
+</div>
 
-  <label for="pdp_votes">PDP Votes:</label>
+<div class="form-field">
+  <label>PDP Votes:</label>
   <input type="number" name="pdp_votes" required>
+</div>
 
-  <label for="dpp_votes">DPP Votes:</label>
+<div class="form-field">
+  <label>DPP Votes:</label>
   <input type="number" name="dpp_votes" required>
+</div>
 
-  <label for="acn_votes">ACN Votes:</label>
+<div class="form-field">
+  <label>ACN Votes:</label>
   <input type="number" name="acn_votes" required>
+</div>
 
-  <label for="cdc_votes">CDC Votes:</label>
+<div class="form-field">
+  <label>CDC Votes:</label>
   <input type="number" name="cdc_votes" required>
+</div>
 
-  <label for="jp_votes">JP Votes:</label>
+<div class="form-field">
+  <label>JP Votes:</label>
   <input type="number" name="jp_votes" required>
+</div>
 
-  <button type="submit">Submit</button>
-</form>
+<button type="submit">Submit</button>
 
 </form>
 
