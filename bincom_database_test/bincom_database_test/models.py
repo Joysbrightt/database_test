@@ -2,7 +2,7 @@ from django.db import models
 from django.db import models
 
 
-class PollingUnit(models.Model):
+class PollingUnitResult(models.Model):
     uniqueid = models.IntegerField(primary_key=True)
     ward_id = models.IntegerField()
     lga_id = models.IntegerField()
@@ -14,3 +14,5 @@ class PollingUnit(models.Model):
     # Add other fields as required
 
 # Define other models (Ward, LGA, announced_pu_results, announced_lga_results) in a similar manner
+class PartyResult:
+    pass

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>polling_unit_form</title>
+</head>
+<body>
+<form action="{% url 'polling_unit_result' polling_unit_id=0 %}" method="GET">
+    <input type="number" name="polling_unit_id" placeholder="Polling Unit ID">
+    <input type="submit" value="Get Result">
+</form>
+
+</body>
+</html>

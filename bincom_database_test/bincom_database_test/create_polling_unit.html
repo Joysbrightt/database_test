@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new_polling_unit</title>
+</head>
+<body>
+<!-- create_polling_unit.html -->
+
+<form method="post" action="{% url 'store_polling_unit_results' %}">
+  {% csrf_token %}
+
+  <label for="uniqueid">Unique ID:</label>
+  <input type="number" name="uniqueid" required>
+
+  <label for="ward_id">Ward ID:</label>
+  <input type="number" name="ward_id" required>
+
+  <label for="lga_id">LGA ID:</label>
+  <input type="number" name="lga_id" required>
+
+  <label for="state_id">State ID:</label>
+  <input type="number" name="state_id" required>
+
+  <label for="pdp_votes">PDP Votes:</label>
+  <input type="number" name="pdp_votes" required>
+
+  <label for="dpp_votes">DPP Votes:</label>
+  <input type="number" name="dpp_votes" required>
+
+  <label for="acn_votes">ACN Votes:</label>
+  <input type="number" name="acn_votes" required>
+
+  <label for="cdc_votes">CDC Votes:</label>
+  <input type="number" name="cdc_votes" required>
+
+  <label for="jp_votes">JP Votes:</label>
+  <input type="number" name="jp_votes" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+</form>
+
+</body>
+</html>

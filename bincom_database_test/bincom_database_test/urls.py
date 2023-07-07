@@ -16,10 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bincom_database_test import views
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polling_unit/<int:uniqueid>/', views.individual_polling_unit_result, name='individual_polling_unit_result'),
+    path('polling_unit/<int:uniqueid>/', views.polling_unit_result, name='polling_unit_result'),
+    path('local_government/', views.local_government_result, name='local_government_result'),
+    path('form/', views.form_view, name='form'),
+    path('result/', views.result_view, name='result'),
+path('create-polling-unit/', views.create_polling_unit, name='create_polling_unit'),
+    path('polling-unit-created/', views.polling_unit_created, name='polling_unit_created'),
+
     # Define other URLs for the remaining views
 ]

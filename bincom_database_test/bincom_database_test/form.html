@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User data input form</title>
+</head>
+<body>
+<!-- form.html -->
+<form method="post" action="{% url 'result' %}">
+  {% csrf_token %}
+  <!-- Form fields -->
+  <label for="input1">Input 1:</label>
+  <input type="text" id="input1" name="input1" required>
+
+  <label for="input2">Input 2:</label>
+  <input type="text" id="input2" name="input2" required>
+
+  <!-- Submit button -->
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
